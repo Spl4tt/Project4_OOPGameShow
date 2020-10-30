@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2d11003f-0c70-4fbc-b683-74d19e6615c1" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectId" id="1jbXwMW2tU2DjAdy4t7ua0SAbp0" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2d11003f-0c70-4fbc-b683-74d19e6615c1" name="Default Changelist" comment="" />
+      <created>1604074002921</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1604074002921</updated>
+      <workItem from="1604074003958" duration="811000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1521" y="571" key="SettingsEditor" timestamp="1604074074856">
+      <screen x="1080" y="382" width="1920" height="1080" />
+    </state>
+    <state x="1521" y="571" key="SettingsEditor/1080.382.1920.1080/0.410.1080.1510@1080.382.1920.1080" timestamp="1604074074856" />
+    <state x="1703" y="642" width="672" height="678" key="search.everywhere.popup" timestamp="1604074084684">
+      <screen x="1080" y="382" width="1920" height="1080" />
+    </state>
+    <state x="1703" y="642" width="672" height="678" key="search.everywhere.popup/1080.382.1920.1080/0.410.1080.1510@1080.382.1920.1080" timestamp="1604074084684" />
+  </component>
+</project>
