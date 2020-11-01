@@ -1,19 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2d11003f-0c70-4fbc-b683-74d19e6615c1" name="Default Changelist" comment="" />
+    <list default="true" id="2d11003f-0c70-4fbc-b683-74d19e6615c1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/Game.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/Game.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/Phrase.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/Phrase.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/app.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1jbXwMW2tU2DjAdy4t7ua0SAbp0" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
@@ -24,6 +36,16 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/OOPGameShow/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.index.html" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -32,7 +54,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1604074002921</updated>
-      <workItem from="1604074003958" duration="811000" />
+      <workItem from="1604074003958" duration="1792000" />
+      <workItem from="1604103708946" duration="1497000" />
+      <workItem from="1604257625813" duration="5407000" />
     </task>
     <servers />
   </component>
@@ -40,13 +64,25 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1521" y="571" key="SettingsEditor" timestamp="1604074074856">
+    <state x="1872" y="832" key="Github.ShareDialog" timestamp="1604074872568">
       <screen x="1080" y="382" width="1920" height="1080" />
     </state>
-    <state x="1521" y="571" key="SettingsEditor/1080.382.1920.1080/0.410.1080.1510@1080.382.1920.1080" timestamp="1604074074856" />
-    <state x="1703" y="642" width="672" height="678" key="search.everywhere.popup" timestamp="1604074084684">
+    <state x="1872" y="832" key="Github.ShareDialog/1080.382.1920.1080/0.410.1080.1510@1080.382.1920.1080" timestamp="1604074872568" />
+    <state x="1802" y="580" width="466" height="710" key="Github.UntrackedFilesDialog" timestamp="1604074941856">
       <screen x="1080" y="382" width="1920" height="1080" />
     </state>
-    <state x="1703" y="642" width="672" height="678" key="search.everywhere.popup/1080.382.1920.1080/0.410.1080.1510@1080.382.1920.1080" timestamp="1604074084684" />
+    <state x="1802" y="580" width="466" height="710" key="Github.UntrackedFilesDialog/1080.382.1920.1080/0.410.1080.1510@1080.382.1920.1080" timestamp="1604074941856" />
+    <state x="1521" y="571" key="SettingsEditor" timestamp="1604261365844">
+      <screen x="1080" y="382" width="1920" height="1080" />
+    </state>
+    <state x="1521" y="571" key="SettingsEditor/1080.382.1920.1080/0.410.1080.1510@1080.382.1920.1080" timestamp="1604261365844" />
+    <state x="1635" y="671" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1604075027630">
+      <screen x="1080" y="382" width="1920" height="1080" />
+    </state>
+    <state x="1635" y="671" width="800" height="528" key="Vcs.Push.Dialog.v2/1080.382.1920.1080/0.410.1080.1510@1080.382.1920.1080" timestamp="1604075027630" />
+    <state x="1703" y="642" width="672" height="678" key="search.everywhere.popup" timestamp="1604261380445">
+      <screen x="1080" y="382" width="1920" height="1080" />
+    </state>
+    <state x="1703" y="642" width="672" height="678" key="search.everywhere.popup/1080.382.1920.1080/0.410.1080.1510@1080.382.1920.1080" timestamp="1604261380445" />
   </component>
 </project>
