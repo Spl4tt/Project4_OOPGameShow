@@ -2,9 +2,15 @@
  * Project 4 - OOP Game App
  * app.js */
 
+const game = new Game();
 const btnStartGame = document.getElementById('btn__reset');
 
 btnStartGame.addEventListener('click', (e) => {
-    const game = new Game();
     game.startGame();
 })
+
+const keys = document.getElementsByClassName('key');
+for(const key of keys) {
+    key.addEventListener('click', () => game.handleInteraction(key));
+}
+

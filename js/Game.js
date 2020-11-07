@@ -5,7 +5,7 @@
 class Game {
     constructor() {
         this.missed = 0;
-        this.phrases = ['Gaggi', 'Furzi', 'Bisi', 'Mongo', 'Saich'];
+        this.phrases = ['Gaggi', 'Furzii', 'Bisi und so', 'Mongo', 'Saich'];
         this.activePhrase = null
     }
 
@@ -14,11 +14,11 @@ class Game {
      */
     startGame() {
         // Hide start screen overlay
-        // TODO Hide start screen overlay
         document.getElementById('overlay').style.display = 'none';
 
         // get a random phrase and set activePhrase property
         this.activePhrase = this.getRandomPhrase();
+        this.activePhrase.addPhrasetoDisplay();
     }
 
     /**
@@ -26,13 +26,30 @@ class Game {
      * @returns {Phrase}
      */
     getRandomPhrase() {
-        const rand = Math.ceil(Math.random() * this.phrases.length);
+        const rand = Math.floor(Math.random() * this.phrases.length);
         return new Phrase(this.phrases[rand]);
     }
 
 
-    handleInteraction() {
+    handleInteraction(button) {
+        // Disable on screen button
+        button.disabled = true;
 
+        if(this.activePhrase.checkLetter(button.textContent)) {
+            // if selected letter was correct: add 'chosen' class to the on screen keyboard letter and call showMatchedLetter()
+            button.classList.add('chosen');
+            this.activePhrase.showMatchedLetter(button.textContent);
+        }
+        else {
+            // if selected letter was wrong: add 'wrong' class to the on screen keyboard letter and call removeLife()
+            button.classList.add('wrong');
+            this.removeLife();
+        }
+
+        // Check if the player has won (checkForWIn()) and call gmaeOver()
+        if(this.checkForWin()) {
+            this.gameOver();
+        }
     }
 
     /**
@@ -46,12 +63,22 @@ class Game {
         // count up missed property
         this.missed += 1;
 
+        // Call gameOver() if player lost all lives
         if(this.missed === 5) {
             this.gameOver();
         }
     }
 
-    checkForWin() {}
+    /**
+     * Checks if the game has been won by checking,
+     * if the count of elements with the 'show' tag equals the count of phrase letters
+     *
+     * @returns {boolean}
+     */
+    checkForWin() {
+        const matchedLetters = document.getElementsByClassName('show');
+        return matchedLetters.length === this.activePhrase.phrase.replaceAll(' ', '').length;
+    }
 
     /**
      * Called at the end of the Game. Shows win / lose message.
@@ -66,5 +93,28 @@ class Game {
         else {
             h1.textContent = 'Well done! Game won.';
         }
+        this.resetGame();
+    }
+
+    /**
+     * Resets the game, so that a new game can be started without old data interfering
+     */
+    resetGame() {
+        // remove all old 'li' - make space for a new phrase
+        const ulPhrase = document.getElementById('phrase').firstElementChild;
+        ulPhrase.innerHTML = '';
+
+        // reset onscreen keyboard by enabling it and reseting the class to 'key'
+        const keys = document.getElementsByClassName('key');
+        for(const key of keys) {
+            key.disabled = false;
+            key.className = 'key';
+        }
+        // Refill hearts and set missed back to zero
+        const hearts = document.getElementsByClassName('tries');
+        for(const heart of hearts) {
+            heart.getElementsByTagName('img')[0].src = 'images/liveHeart.png'
+        }
+        this.missed = 0;
     }
 }

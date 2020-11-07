@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d11003f-0c70-4fbc-b683-74d19e6615c1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example_phrase_html.txt" beforeDir="false" afterPath="$PROJECT_DIR$/example_phrase_html.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/Game.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/Game.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/Phrase.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/Phrase.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/app.js" afterDir="false" />
@@ -36,12 +36,16 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JavaScript Debug.index.html (1)">
+    <configuration name="index.html (1)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Project4_OOPGameShow/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
     <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/OOPGameShow/index.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.index.html (1)" />
         <item itemvalue="JavaScript Debug.index.html" />
       </list>
     </recent_temporary>
@@ -57,6 +61,8 @@
       <workItem from="1604074003958" duration="1792000" />
       <workItem from="1604103708946" duration="1497000" />
       <workItem from="1604257625813" duration="5407000" />
+      <workItem from="1604428556542" duration="4125000" />
+      <workItem from="1604702997651" duration="11033000" />
     </task>
     <servers />
   </component>
@@ -72,17 +78,27 @@
       <screen x="1080" y="382" width="1920" height="1080" />
     </state>
     <state x="1802" y="580" width="466" height="710" key="Github.UntrackedFilesDialog/1080.382.1920.1080/0.410.1080.1510@1080.382.1920.1080" timestamp="1604074941856" />
-    <state x="1521" y="571" key="SettingsEditor" timestamp="1604261365844">
-      <screen x="1080" y="382" width="1920" height="1080" />
+    <state x="465" y="212" key="SettingsEditor" timestamp="1604706993516">
+      <screen x="0" y="28" width="1920" height="1052" />
     </state>
+    <state x="465" y="212" key="SettingsEditor/0.28.1920.1052@0.28.1920.1052" timestamp="1604706993516" />
     <state x="1521" y="571" key="SettingsEditor/1080.382.1920.1080/0.410.1080.1510@1080.382.1920.1080" timestamp="1604261365844" />
+    <state x="689" y="289" width="540" height="524" key="StructurePopup" timestamp="1604706374306">
+      <screen x="0" y="28" width="1920" height="1052" />
+    </state>
+    <state x="689" y="289" width="540" height="524" key="StructurePopup/0.28.1920.1052@0.28.1920.1052" timestamp="1604706374306" />
     <state x="1635" y="671" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1604075027630">
       <screen x="1080" y="382" width="1920" height="1080" />
     </state>
     <state x="1635" y="671" width="800" height="528" key="Vcs.Push.Dialog.v2/1080.382.1920.1080/0.410.1080.1510@1080.382.1920.1080" timestamp="1604075027630" />
-    <state x="1703" y="642" width="672" height="678" key="search.everywhere.popup" timestamp="1604261380445">
-      <screen x="1080" y="382" width="1920" height="1080" />
+    <state x="624" y="254" key="run.anything.popup" timestamp="1604431425629">
+      <screen x="0" y="28" width="1920" height="1052" />
     </state>
+    <state x="624" y="254" key="run.anything.popup/0.28.1920.1052@0.28.1920.1052" timestamp="1604431425629" />
+    <state x="623" y="281" width="672" height="661" key="search.everywhere.popup" timestamp="1604706872049">
+      <screen x="0" y="28" width="1920" height="1052" />
+    </state>
+    <state x="623" y="281" width="672" height="661" key="search.everywhere.popup/0.28.1920.1052@0.28.1920.1052" timestamp="1604706872049" />
     <state x="1703" y="642" width="672" height="678" key="search.everywhere.popup/1080.382.1920.1080/0.410.1080.1510@1080.382.1920.1080" timestamp="1604261380445" />
   </component>
 </project>
