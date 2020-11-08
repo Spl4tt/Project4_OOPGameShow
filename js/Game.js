@@ -5,7 +5,7 @@
 class Game {
     constructor() {
         this.missed = 0;
-        this.phrases = ['Gaggi', 'Furzii', 'Bisi und so', 'Mongo', 'Saich'];
+        this.phrases = ['Phrase', 'Magic', 'A long word', 'Skyline', 'Truth'];
         this.activePhrase = null
     }
 
@@ -31,24 +31,31 @@ class Game {
     }
 
 
+    /**
+     * Called when a onscreen key or keyboard key is pressed.
+     * Handles the disabling of the key and the check if the key was matched.
+     *
+     * @param button
+     */
     handleInteraction(button) {
         // Disable on screen button
         button.disabled = true;
 
-        if(this.activePhrase.checkLetter(button.textContent)) {
-            // if selected letter was correct: add 'chosen' class to the on screen keyboard letter and call showMatchedLetter()
-            button.classList.add('chosen');
-            this.activePhrase.showMatchedLetter(button.textContent);
-        }
-        else {
-            // if selected letter was wrong: add 'wrong' class to the on screen keyboard letter and call removeLife()
-            button.classList.add('wrong');
-            this.removeLife();
-        }
+        if(this.activePhrase !== null) {
+            if (this.activePhrase.checkLetter(button.textContent)) {
+                // if selected letter was correct: add 'chosen' class to the on screen keyboard letter and call showMatchedLetter()
+                button.classList.add('chosen');
+                this.activePhrase.showMatchedLetter(button.textContent);
+            } else {
+                // if selected letter was wrong: add 'wrong' class to the on screen keyboard letter and call removeLife()
+                button.classList.add('wrong');
+                this.removeLife();
+            }
 
-        // Check if the player has won (checkForWIn()) and call gmaeOver()
-        if(this.checkForWin()) {
-            this.gameOver();
+            // Check if the player has won (checkForWIn()) and call gmaeOver()
+            if (this.checkForWin()) {
+                this.gameOver();
+            }
         }
     }
 
@@ -85,13 +92,16 @@ class Game {
      */
     gameOver() {
         const h1 = document.getElementById('game-over-message');
-        document.getElementById('overlay').style.display = 'block';
+        const overlay = document.getElementById('overlay');
+        overlay.style.display = 'block';
         if(this.missed === 5) {
             // Lost
             h1.textContent = 'Sry, you\'ve lost the game!';
+            overlay.className = 'lose';
         }
         else {
             h1.textContent = 'Well done! Game won.';
+            overlay.className = 'win';
         }
         this.resetGame();
     }
