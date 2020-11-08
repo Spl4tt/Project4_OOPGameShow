@@ -1,6 +1,6 @@
 # Project4_OOPGameShow
 
-Css changes:
+CSS changes:
 - Wrong selected letters = red
 - Changed general font-family to 'Roboto Light'
 - Changed letters to be round
