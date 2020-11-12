@@ -7,6 +7,8 @@ const btnStartGame = document.getElementById('btn__reset');
 
 // clickevent listener for the start button on the start overlay. Initiates the game.
 btnStartGame.addEventListener('click', (e) => {
+    // reset the game
+    game.resetGame();
     game.startGame();
 })
 
@@ -18,8 +20,8 @@ for(const key of keys) {
 
 // Keydown event for the physical keyboard
 document.addEventListener('keydown', (e) => {
-    // Check if a letter was pressed
-    if(e.code.startsWith('Key', 0)) {
+    // Check if keys are enabled and if a letter was pressed
+    if(!game.suppressKeyInput && e.code.startsWith('Key', 0)) {
         // get the onscreen button for the handleInteraction() function and call it
         const keys = document.getElementsByClassName('key');
         for(const key of keys) {

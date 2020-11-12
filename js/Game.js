@@ -3,9 +3,10 @@
  * Game.js */
 
 class Game {
+    suppressKeyInput = false;
     constructor() {
         this.missed = 0;
-        this.phrases = ['Phrase', 'Magic', 'A long word', 'Skyline', 'Truth'];
+        this.phrases = [new Phrase('Phrase'), new Phrase('Magic'), new Phrase('A long word'), new Phrase('Skyline'), new Phrase('Truth')];
         this.activePhrase = null
     }
 
@@ -27,7 +28,7 @@ class Game {
      */
     getRandomPhrase() {
         const rand = Math.floor(Math.random() * this.phrases.length);
-        return new Phrase(this.phrases[rand]);
+        return this.phrases[rand];
     }
 
 
@@ -91,6 +92,8 @@ class Game {
      * Called at the end of the Game. Shows win / lose message.
      */
     gameOver() {
+        // Supress key input at the end screen
+        this.suppressKeyInput = true;
         const h1 = document.getElementById('game-over-message');
         const overlay = document.getElementById('overlay');
         overlay.style.display = 'block';
@@ -103,7 +106,6 @@ class Game {
             h1.textContent = 'Well done! Game won.';
             overlay.className = 'win';
         }
-        this.resetGame();
     }
 
     /**
@@ -120,6 +122,8 @@ class Game {
             key.disabled = false;
             key.className = 'key';
         }
+        // Re-enable the keyinputs
+        this.suppressKeyInput = false;
         // Refill hearts and set missed back to zero
         const hearts = document.getElementsByClassName('tries');
         for(const heart of hearts) {
